@@ -9,8 +9,6 @@ GAME RULES:
 
 */
 
-//a fragment of code that produces a value is called an expression. 
-//Roughly, a statement performs an action (if, loops). A program is roughly a sequence of statements. (ignorning declarerations)
 
 var scores, roundScore, activePlayer, gamePlaying;
 
@@ -90,7 +88,6 @@ function init() {
     activePlayer = 0;
     roundScore = 0;
     document.querySelector('.dice').style.display = 'none';
-    //get elemenet by id is a bit faster than query selector
     document.getElementById('score-0').textContent = '0';
     document.getElementById('score-1').textContent = '0';
     document.getElementById('current-0').textContent = '0';
@@ -105,12 +102,3 @@ function init() {
     gamePlaying = true;
 
 }
-
-
-//object that will get us access to the dom is the document object
-//document.querySelector('#current-' + activePlayer).textContent = dice;
-
-//document.querySelector('#current-' + activePlayer).innerHTML = '<em>' + dice + '</em>';
-
-//var x = document.querySelector('#score-0').textContent;
-//console.log(x);
